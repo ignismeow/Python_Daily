@@ -50,3 +50,26 @@ Vehicles.remove('Rubicon')
 print(Vehicles)
 for vehicle in Vehicles:
     print(f"My second priority is {vehicle}.")
+
+#Problem 4: Write a python program to find the larges among three numbers
+#using lists
+num_list = []
+num_first = int(input("Please enter first number: "))
+num_second = int(input("Please enter second number: "))
+num_third = int(input("Please enter third number: "))
+num_list.append(num_first)
+num_list.append(num_second)
+num_list.append(num_third)
+largest_number = max(num_list)
+print(f"The largest number is {largest_number}.")
+
+#using if & else
+num_first = int(input("Please enter first number: "))
+num_second = int(input("Please enter second number: "))
+num_third = int(input("Please enter third number: "))
+if num_second < num_first > num_third:
+    print(f"{num_first} is the largest number in the list.")
+elif num_first < num_second > num_third:
+    print(f"{num_second} is the largest number in the list.")
+else:
+    print(f"{num_third} is the largest number in the list.")
