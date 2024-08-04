@@ -73,3 +73,15 @@ elif num_first < num_second > num_third:
     print(f"{num_second} is the largest number in the list.")
 else:
     print(f"{num_third} is the largest number in the list.")
+
+#Problem 5: Write a python program to check prime numbers
+num = int(input("Please enter a number: "))
+if  num <= 1:
+    print("Please enter valid number! Try Again")
+elif num > 1:
+    for i in range(2, num):
+        if num % i == 0:
+            print("Not Prime Pumber")
+            break
+    else:
+        print("Prime Number")
