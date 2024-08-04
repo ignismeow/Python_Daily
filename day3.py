@@ -107,3 +107,32 @@ for num in range(num_first, num_last + 1):
     elif num <= 1:
         print("1 or less then 1 are not prime numbers.")
 
+#Problem 8: Write a python program to convert celcius to forenheit
+celcius = float(input("Please temperature in °C: "))
+forenheit = (celcius * 1.8) + 32
+message = f"The given {celcius}°C in temperature is equal to {forenheit}°F"
+print(message)
+
+#Problem 9: Write a python program to find factorial of a number
+
+num = int(input("Please enter a number: "))
+factorial = 1
+if num < 0:
+    print("Factorial of number below zero does not exits!")
+elif num == 0:
+    print("Factorial of 0 is", 1)
+    quit()
+if num > 1:
+    for i in range(1, num+1):
+        factorial *= i
+print(factorial)
+
+#method using recurssion method
+def fact(a):
+    if a == 0:
+        return 1
+    else:
+        return ((a)*fact(a-1))
+
+num = int(input("Please enter number here: "))
+print(f"The factorial of given number is {fact(num)}.")
