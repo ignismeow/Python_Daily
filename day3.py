@@ -114,7 +114,7 @@ message = f"The given {celcius}°C in temperature is equal to {forenheit}°F"
 print(message)
 
 #Problem 9: Write a python program to find factorial of a number
-
+#Promblem 9.1: Using for loop
 num = int(input("Please enter a number: "))
 factorial = 1
 if num < 0:
@@ -126,8 +126,7 @@ if num > 1:
     for i in range(1, num+1):
         factorial *= i
 print(factorial)
-
-#method using recurssion method
+#Promblem 9.2: Using recurssion method
 def fact(a):
     if a == 0:
         return 1
@@ -136,3 +135,17 @@ def fact(a):
 
 num = int(input("Please enter number here: "))
 print(f"The factorial of given number is {fact(num)}.")
+
+#Problem 10: Write a python program to print multiplication table
+#Problem 10.1: Using for loop
+num = int(input("Please enter a number: "))
+for i in range(1, 11):
+    print(f"{num} * {i} = {num * i}")
+    
+#Problem 10.2: Using While loop
+num = int(input("Please enter a number: "))
+i = 1
+while i <= 10:
+    print(f"{num} * {i} = {num * i}")
+    i+=1
+        
