@@ -91,3 +91,19 @@ import random
 random_number = random.randint(1, 6)
 print(random_number)
 
+#Problem 7: Write a python program to print all the prime numbers in an interval
+num_first = int(input("Please enter first number: "))
+num_last = int(input("Please enter last number: "))
+# if num_first <= 1 or num_last <=1:
+#     print("Please enter a valid range of numbers Please!")
+for num in range(num_first, num_last + 1):
+    if num > 1:
+        for i in range(2, num):
+            if num % i == 0:
+                break
+        else:
+            print(num)
+    
+    elif num <= 1:
+        print("1 or less then 1 are not prime numbers.")
+
