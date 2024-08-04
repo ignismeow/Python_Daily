@@ -85,3 +85,9 @@ elif num > 1:
             break
     else:
         print("Prime Number")
+
+#Problem 6: Write a python program to generate random number
+import random
+random_number = random.randint(1, 6)
+print(random_number)
+
