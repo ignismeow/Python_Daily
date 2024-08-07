@@ -115,3 +115,12 @@ between = np.logical_and(cpc >= 100, cpc <= 500)
 medium = cars[between]
 # Print medium
 print(medium)
+
+
+# Initialize offset
+offset = 8
+# Code the while loop
+while offset != 0:
+    print("correcting...")
+    offset = offset - 1
+    
