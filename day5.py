@@ -36,3 +36,54 @@ print(my_kitchen > 10 and my_kitchen < 18)
 print(my_kitchen < 14 or my_kitchen > 17)
 # Double my_kitchen smaller than triple your_kitchen?
 print(2*my_kitchen < 3*your_kitchen)
+
+#Problem: if, else & elif statments
+# Define variables
+room = "kit"
+area = 14.0
+# if statement for room
+if room == "kit" :
+    print("looking around in the kitchen.")
+# if statement for area
+if area > 15:
+    print("big place!")
+
+# Define variables
+room = "kit"
+area = 14.0
+# if-else construct for room
+if room == "kit" :
+    print("looking around in the kitchen.")
+else :
+    print("looking around elsewhere.")
+# if-else construct for area
+if area > 15 :
+    print("big place!")
+else:
+    print("pretty small.")
+
+
+# Define variables
+room = "bed"
+area = 14.0
+# if-elif-else construct for room
+if room == "kit" :
+    print("looking around in the kitchen.")
+elif room == "bed":
+    print("looking around in the bedroom.")
+else :
+    print("looking around elsewhere.")
+# if-elif-else construct for area
+if area > 15 :
+    print("big place!")
+elif area > 10:
+    print("medium size, nice!")
+else :
+    print("pretty small.")
+# Import cars data
+import pandas as pd
+cars = pd.read_csv('cars.csv', index_col = 0)
+# Convert code to a one-liner
+sel = cars[cars['drives_right']]
+# Print sel
+print(sel)
