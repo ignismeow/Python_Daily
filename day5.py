@@ -124,3 +124,24 @@ while offset != 0:
     print("correcting...")
     offset = offset - 1
 
+
+#Problem: Guess the Number Game:
+import random
+# should_continue = True
+score = 0
+random_number = random.randint(1, 10)
+while True:
+    guessed = int(input("Please guess the number here: "))
+    if guessed > random_number:
+        print("You guessed too high!")
+        score += 1
+    elif guessed < random_number:
+        print("You guessed too low!")
+        score += 1
+    else:
+        print(f"You guessed it right!, you total guess are {score}.")   
+    user_input = input('Wanna try again?(y or q): ').lower()
+    if user_input == 'q':
+        # should_continue = False
+        quit()
+
