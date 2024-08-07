@@ -145,3 +145,16 @@ while True:
         # should_continue = False
         quit()
 
+
+#Problem Madlib game:
+Adjective = str(input("Please enter your Adjective: "))
+Noun = str(input("Please enter your Noun: "))
+Verb = str(input("Please enter your Verb: "))
+Silly_name = str(input("Please enter your Silly_name: "))
+Emotion = str(input("Please enter your Emotion: "))
+He_she = str(input("Please enter your He_she: "))
+story = f"""In a land far, far away, there lived a {Adjective} {Noun} named {Silly_name}. {Silly_name} lived in a {Noun} made of {Noun}. One day, while {Verb}, {Silly_name} stumbled upon a {Adjective} {Noun}.
+Curious, {Silly_name} decided to {Verb}. Suddenly, the {Adjective} {Noun} started to {Verb}. {Silly_name}, feeling {Emotion}, {Verb} as fast as {He_she} could.
+Just when {Silly_name} thought all hope was lost, a {Adjective} {Noun} appeared. The {Adjective} {Noun} helped {Silly_name} {Verb} the {Adjective} {Noun}.
+Grateful, {Silly_name} thanked the {Adjective} {Noun} and they became the best of friends. From that day on, {Silly_name} and the {Adjective} {Noun} went on many more {Adjective} adventures together."""
+print(story)
