@@ -158,3 +158,10 @@ Curious, {Silly_name} decided to {Verb}. Suddenly, the {Adjective} {Noun} starte
 Just when {Silly_name} thought all hope was lost, a {Adjective} {Noun} appeared. The {Adjective} {Noun} helped {Silly_name} {Verb} the {Adjective} {Noun}.
 Grateful, {Silly_name} thanked the {Adjective} {Noun} and they became the best of friends. From that day on, {Silly_name} and the {Adjective} {Noun} went on many more {Adjective} adventures together."""
 print(story)
+
+
+# Areas in list
+areas = [11.25, 18.0, 20.0, 10.75, 9.50]
+# Code the for loop
+for i in areas:
+    print(i)
