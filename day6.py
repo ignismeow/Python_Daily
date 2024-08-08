@@ -251,3 +251,10 @@ print(var)
 # Pandas using del function
 del var['python_12']
 print(var)
+
+
+# Pandas making a csv file
+dic = {'a': [1,2,3,4,5,6], 's':[1,2,3,4,5,6]} 
+d = pd.DataFrame(dic)
+print(d)
+d.to_csv("test2.csv", index=False, header=[1,2])
